@@ -5,8 +5,8 @@ public class MaquinaTeste {
         Maquina maquina = new Maquina();
         
         maquina.abastecer(7);
-        maquina.vender_coxinha();
-        maquina.vender_coxinha(5);
-        maquina.zerar_maquina();
+        maquina.venderCoxinha();
+        maquina.venderCoxinha(5);
+        maquina.zerarMaquina();
     }
 }   
