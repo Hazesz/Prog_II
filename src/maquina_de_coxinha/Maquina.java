@@ -23,13 +23,13 @@ public class Maquina {
         System.out.println("Quantidade de Coxinhas: " + coxinha);
     }
     
-    public void vender_coxinha(){
+    public void venderCoxinha(){
         if(coxinha > 0){
         coxinha--;
         }
         System.out.println("Quantidade de Coxinhas: " + coxinha);
     }
-    public void vender_coxinha(int comprado){
+    public void venderCoxinha(int comprado){
         if(comprado > coxinha){
             System.out.println("Falha Catastrofica");
             System.out.println("Quantidade de coxinha menor que a requerida!");
@@ -40,7 +40,7 @@ public class Maquina {
         System.out.println("Quantidade de Coxinhas: " + coxinha);
     }
     
-    public void zerar_maquina(){
+    public void zerarMaquina(){
         for(int zerar = 0; zerar <= coxinha; zerar ++){
             if(coxinha >= 0){
                 coxinha --;
