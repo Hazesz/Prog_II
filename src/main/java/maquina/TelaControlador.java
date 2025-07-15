@@ -24,13 +24,9 @@ public class TelaControlador {
     
     @FXML
     private void abastecerQuant(){
-        try{
             int quant = Integer.parseInt(campoQuantidadeAbastecer.getText());
             maquina.abastecer(quant);
             campo.setText(String.valueOf(maquina.getEstoque()));
-        }catch(NumberFormatException e){
-            campo.setText("Quantidade Invalida");
-        }
     }
     
     @FXML
@@ -40,13 +36,9 @@ public class TelaControlador {
     }
     @FXML
     private void venderQuantidade() {
-        try {
             int quant = Integer.parseInt(campoQuantidadeVender.getText());
             maquina.venderCoxinha(quant);
             campo.setText(String.valueOf(maquina.getEstoque()));
-        } catch (NumberFormatException e) {
-            campo.setText("Quantidade inválida");
-        }
     }
     
     @FXML
